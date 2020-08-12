@@ -5,7 +5,8 @@ export const HeaderContainer = styled.div`
   width: 100%;
   height: 700px;
   background: url('https://i.imgur.com/Fg4sRkR.png') center -17px;
-  background-size: 1920px 717px;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   .content {
     display: flex;
