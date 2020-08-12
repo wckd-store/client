@@ -19,7 +19,11 @@ export const InnerContainer = styled.div`
     display: flex;
   }
   
-  @media(max-width: 1139px) {
+  @media(max-width: 1280px) {
+    max-width: 740px;    
+  }
+  
+  @media(max-width: 739px) {
     max-width: 100%;
     
     .padding {

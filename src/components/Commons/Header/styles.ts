@@ -42,20 +42,28 @@ export const HeaderContainer = styled.div<HeaderContainerProps>`
           border-radius: 40px;
         }
       }
-      
     }
   }
   
-  @media(max-width: 1919px) {
-    
-    .text {
-      max-width: 500px;
-      font-size: 40px !important;
-    }
-    
-    img {
-        width: 390px;
-    }
+  @media(max-width: 1280px) {
+    .content {
+      margin-top: 60px;
+      height: calc(100% - 60px);
+      
+      .text {
+        font-size: 32px !important;
+        
+        .button {
+          margin-top: 15px !important;
+          font-size: 16px !important;
+          padding: 10px 25px !important;
+        }
+      }
+      
+      img {
+        max-width: 350px !important;
+      }
+    }  
   }
   
   @media(max-width: 991px) {
@@ -80,4 +88,10 @@ export const ArrowIcon = styled(FiArrowRight)`
   width: 18px;
   height: 18px;
   margin-bottom: -1px;
+  
+  @media(max-width: 1280px) {
+    margin-bottom: -.5px !important;
+    width: 11px !important;
+    height: 11px !important;
+  }
 `;
