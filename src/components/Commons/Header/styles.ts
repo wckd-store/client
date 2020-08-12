@@ -45,7 +45,28 @@ export const HeaderContainer = styled.div<HeaderContainerProps>`
     }
   }
   
-  @media(max-width: 1280px) {
+  @media(max-width: 1919px) {
+    .content {
+      margin-top: 60px;
+      height: calc(100% - 60px);
+      
+      .text {
+        font-size: 38px !important;
+        
+        .button {
+          margin-top: 15px !important;
+          font-size: 18px !important;
+          padding: 12px 30px !important;
+        }
+      }
+      
+      img {
+        max-width: 410px !important;
+      }
+    }  
+  }
+  
+  @media(max-width: 1365px) {
     .content {
       margin-top: 60px;
       height: calc(100% - 60px);
@@ -89,7 +110,13 @@ export const ArrowIcon = styled(FiArrowRight)`
   height: 18px;
   margin-bottom: -1px;
   
-  @media(max-width: 1280px) {
+  @media(max-width: 1919px) {
+    margin-bottom: -.5px !important;
+    width: 13px !important;
+    height: 13px !important;
+  }
+  
+  @media(max-width: 1365px) {
     margin-bottom: -.5px !important;
     width: 11px !important;
     height: 11px !important;

@@ -19,7 +19,11 @@ export const InnerContainer = styled.div`
     display: flex;
   }
   
-  @media(max-width: 1280px) {
+  @media(max-width: 1919px) {
+    max-width: 860px; 
+  }
+  
+  @media(max-width: 1365px) {
     max-width: 740px;    
   }
   

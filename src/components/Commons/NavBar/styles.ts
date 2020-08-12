@@ -50,7 +50,32 @@ export const NavBarContainer = styled.div`
       }
     }
     
-    @media(max-width: 1280px) {
+    @media(max-width: 1919px) {
+      height: 60px;
+      
+      .logo-section img {
+         height: 36px;
+      }    
+      
+      .navbar-section {
+        height: 60px;
+        
+        li {
+          margin-left: 35px !important;
+        
+          a {
+            font-size: 14px !important;
+          }
+        }
+        
+        .rounded {
+          padding: 5px 15px !important;
+          margin-left: -5px !important;
+        }
+      }
+    }
+    
+    @media(max-width: 1365px) {
       height: 60px;
       
       .logo-section img {
