@@ -1,12 +1,15 @@
 import styled from 'styled-components';
 import { FiArrowRight } from 'react-icons/fi/index';
 
-export const HeaderContainer = styled.div`
+export interface HeaderContainerProps {
+    width: number
+}
+
+export const HeaderContainer = styled.div<HeaderContainerProps>`
   width: 100%;
-  height: 700px;
-  background: url('https://i.imgur.com/Fg4sRkR.png') center -17px;
+  height: ${props => props.width > 1280 ? props.width / 2.74285714286 + 'px' : 1280 / 2.74285714286 + 'px'};
+  background: url('https://i.imgur.com/Fg4sRkR.png') no-repeat center -17px;
   background-size: cover;
-  background-repeat: no-repeat;
 
   .content {
     display: flex;
@@ -43,6 +46,18 @@ export const HeaderContainer = styled.div`
     }
   }
   
+  @media(max-width: 1919px) {
+    
+    .text {
+      max-width: 500px;
+      font-size: 40px !important;
+    }
+    
+    img {
+        width: 390px;
+    }
+  }
+  
   @media(max-width: 991px) {
     .half:nth-child(2) {
       display: none;
@@ -57,12 +72,7 @@ export const HeaderContainer = styled.div`
       align-items: center;
     }
   }
-  
-  @media(max-width: 639px) {
-    .text {
-      font-size: 40px !important;
-    }
-  }
+
 
 `;
 

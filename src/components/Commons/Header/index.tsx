@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, useEffect, useState } from 'react';
 import Link from 'next/link';
 
 import { Centered, Container } from 'components';
@@ -6,8 +6,16 @@ import { ArrowIcon, HeaderContainer } from './styles';
 
 
 const Header: FunctionComponent = () => {
+
+    const [width, setWidth] = useState(0);
+
+    useEffect(() => {
+        window.addEventListener('resize', () => setWidth(window.innerWidth));
+    }, []);
+
+
     return (
-        <HeaderContainer>
+        <HeaderContainer width={width}>
             <Container>
 
                 <div className="content">
